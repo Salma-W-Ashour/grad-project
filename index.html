@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Badge Example</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex items-center justify-center min-h-screen bg-gray-100">
+    <!-- Badge Example -->
+    <div class="relative inline-block">
+      <button
+        class="relative px-4 py-2 text-white bg-blue-600 rounded-lg hover:bg-blue-700"
+      >
+        Notifications
+      </button>
+      <span
+        class="absolute top-0 right-0 px-2 text-xs text-white bg-red-600 rounded-full -translate-y-1/2 translate-x-1/2"
+      >
+        3
+      </span>
+    </div>
+  </body>
+</html>

@@ -12,29 +12,34 @@
 
       <div class="bg-gray-100">
         <section
-          class="relative bg-cover bg-center h-screen"
-          style="background-image: url('imgs/pexels-pixabay-258154.jpg')"
+          class="relative bg-cover bg-center h-[50vh]"
+          style="background-image: url('imgs/nav-and-hero-final (1).jpg')"
         >
           <!-- Header -->
           <header
             class="relative w-full z-50 bg-transparent text-white p-4 hover:bg-opacity-75"
           >
-            <div
-              class="container mx-auto flex justify-between items-center py-4 px-6"
-            >
+            <div class="container mx-auto flex justify-center py-4 px-6">
               <!-- nav bar -->
-              <nav class="flex-1 flex justify-center gap-10">
+              <nav class="flex-1 flex justify-center items-center gap-10">
                 <!-- logo -->
                 <div class="text-2xl font-bold text-yellow-400 w-1/4">
                   <a href="#">BookIn</a>
                 </div>
 
-                <ul class="flex justify-between items-center gap-8 m-auto">
+                <ul class="flex justify-center items-center gap-8 m-auto">
                   <li>
                     <a
                       href="#"
                       class="text-white hover:text-yellow-400 duration-300 opacity-75 transition-opacity"
                       >Home</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="hotels.html"
+                      class="text-white hover:text-yellow-400 transition duration-300 opacity-75 transition-opacity"
+                      >Hotels</a
                     >
                   </li>
                   <li>
@@ -53,7 +58,7 @@
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href="contact.html"
                       class="text-white hover:text-yellow-400 transition duration-300 opacity-75 transition-opacity"
                       >Contact Us</a
                     >
@@ -69,27 +74,34 @@
           </header>
 
           <!-- Overlay -->
-          <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+          <div class="absolute inset-0"></div>
 
           <!-- Content -->
-          <div
-            class="relative z-10 flex flex-col items-center justify-center text-center text-white h-full px-6"
-          >
-            <h1 class="text-4xl sm:text-5xl font-bold mb-6">
-              Our vision is all about making memories with people who love to
-              PLAY.
-            </h1>
-            <p class="text-lg sm:text-xl mb-8">
-              Whether you're a couple or a family, come join us in a luxury
-              dream vacation, <br />
-              and enjoy some much-needed private relaxation.
+          <div class="text-center text-white flex-grow">
+            <h1 class="text-4xl font-bold mb-4">Find Your Perfect Hotel</h1>
+            <p class="mb-8 text-lg">
+              Explore hotels, resorts, and more around the world.
             </p>
-            <a
-              href="#"
-              class="bg-yellow-400 hover:bg-blue-900 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 hover:scale-110 transition-transform duration-300"
+            <!-- Search Bar -->
+            <form
+              class="flex flex-col md:flex-row items-center bg-white rounded-lg shadow-lg p-4 max-w-3xl mx-auto"
             >
-              Book Now
-            </a>
+              <input
+                type="text"
+                placeholder="Destination or Hotel Name"
+                class="flex-grow p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 mb-3 md:mb-0 md:mr-3"
+              />
+              <input
+                type="date"
+                class="flex-grow p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 mb-3 md:mb-0 md:mr-3"
+              />
+              <button
+                type="submit"
+                class="bg-blue-900 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-md"
+              >
+                Search
+              </button>
+            </form>
           </div>
         </section>
 
